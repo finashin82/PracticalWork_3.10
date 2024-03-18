@@ -179,7 +179,11 @@ namespace PracticalWork_3._10
                 Console.Write("Введите число: ");
                 strCustomNumber = Convert.ToString(Console.ReadLine());
 
-                if (strCustomNumber == " ") break;
+                if (strCustomNumber == "")
+                {
+                    Console.WriteLine($"Очень жаль. Загаданное число: {numberOfRandom}");
+                    break;
+                }
                 else intCustomNumber = Convert.ToInt32(strCustomNumber);
 
                 if (intCustomNumber == numberOfRandom)
